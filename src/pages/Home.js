@@ -1,20 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
+import AppsIcon from "@material-ui/icons/Apps";
+import {Avatar} from "@material-ui/core"
 //41:59
 function Home() {
   return (
     <div className='home'>
-      <h1>This is HOMEPAGE</h1>
+  
+
       <div className="home__header">
         <div className="home__headerLeft">
-          {/* Link */}
+          <Link to="/about">About</Link>
+          <Link to="/store">Store</Link>
           {/* Link */}
         </div>
         <div className="home__headerRight">
-          {/* Link */}
-          {/* Link */}
-          {/* Icon */}
-          {/* Avatar */}
+          <Link to="/gmail">Gmail</Link>
+          <Link to="/images">Images</Link>
+         <AppsIcon />
+         <Avatar />
         </div>
       </div>
 
