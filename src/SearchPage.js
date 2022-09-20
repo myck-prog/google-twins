@@ -6,6 +6,8 @@ function SearchPage() {
 
     // destructure the search term
     const [{term}, dispatch] = useStateValue();
+    //https://developers.google.com/custom-search/v1/introduction#identify_your_application_to_google_with_api_key
+    //https://programmablesearchengine.google.com/cse/setup/basic?cx=82d873a1c3b5f4eac
     
 
   return (
